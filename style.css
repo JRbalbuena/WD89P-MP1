@@ -1,25 +1,21 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: 	#1B1212;
+body {
+    background-color: #1B1212;
 }
 
 /* style for header */
-#container1{
-    background-color: transparent;
-}
-
 img {
     height: 90px;
     width: 330px;
 }
 
 /* style for carousel */
-.carousel-item{
+.carousel-item {
     height: 32rem;
     color: whitesmoke;
     position: relative;
