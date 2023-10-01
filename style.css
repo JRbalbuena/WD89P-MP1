@@ -18,7 +18,15 @@ img {
 
 
 .carousel-item img {
-    width: 50%; 
-    height: auto;
-    object-fit: scale-down ;
-}   
+    width: 550px;
+    height: 750px;
+    object-fit: cover;
+}
+
+/* Custom CSS for the footer */
+footer {
+    background-color: #1B1212; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to your desired color */
+    padding: 10px 0; /* Adjust the padding to change the height of the footer */
+    text-align: center;
+}
