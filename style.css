@@ -12,24 +12,56 @@ body {
 img {
     height: 90px;
     width: 330px;
-}
+}   
 
 /* style for carousel */
-
+.carousel-item {
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
 
 .carousel-item img {
-    max-width: 550px; /* Set the maximum width */
-    max-height: 750px; /* Set the maximum height */
+    max-width: 1500px;
+    max-height: 950px; 
     width: auto;
     height: auto;
-    object-fit: scaledown; /* Scale down the image to fit within the specified max-width and max-height */
+    object-fit: scaledown;
+    display: block;
+    margin: 0 auto;
 }
+
+/* Center the text and add color to it */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 10px;
+    margin: 10px;
+    color: #fff; /* Change the color to the desired color (in this case, white) */
+}
+
+/* Style the heading (H1) */
+.about h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optionally make the text bold */
+}
+
+/* Style the paragraph (p) */
+.about p {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust the line height for better readability */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
 
 
 /* Custom CSS for the footer */
 footer {
-    background-color: #1B1212; /* Change the background color to your desired color */
-    color: #fff; /* Change the text color to your desired color */
-    padding: 10px 0; /* Adjust the padding to change the height of the footer */
+    background-color: #1B1212;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
