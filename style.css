@@ -32,33 +32,72 @@ img {
     margin: 0 auto;
 }
 
-/* Center the text and add color to it */
+/* style for About Section */
+
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     margin: 10px;
-    color: #fff; /* Change the color to the desired color (in this case, white) */
+    color: #fff;
 }
 
-/* Style the heading (H1) */
-.about h1 {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Optionally make the text bold */
+h1{
+    color: aliceblue;
+    text-align: center;
+    
 }
 
-/* Style the paragraph (p) */
-.about p {
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height for better readability */
-    margin-top: 20px; /* Add some top margin for spacing */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: auto;
+  }
+
+  img {
+    width: 400px
+  }
+
+
+.image2{
+    width: 450px;
+    height: 300px;
+    margin: 10px;
 }
 
+.bratva{
+    color:  gold;
+    font-size: 30px;
+}
 
+.details{
+    color: aliceblue;
+    font-size: 20px;
+}
 
-/* Custom CSS for the footer */
+.details2{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.yakuza{
+    color: beige;
+    font-size: 30px;
+}
+
 footer {
     background-color: #1B1212;
     color: #fff;
