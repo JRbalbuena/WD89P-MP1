@@ -49,6 +49,22 @@ img {
 width: 600px;
 height: 400px;
 }
+
+/* Media query for screens larger than a specified width (e.g., 768px) */
+@media (min-width: 768px) {
+    /* Change to a 2-column layout on larger screens */
+    .container.text-center .row {
+      grid-template-columns: 1fr 1fr; /* 2 equal-width columns on larger screens */
+    }
+  }
+  
+  /* Media query for screens larger than a specified width (e.g., 992px) */
+  @media (min-width: 992px) {
+    /* Change to a 4-column layout on even larger screens */
+    .container.text-center .row {
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal-width columns on even larger screens */
+    }
+  }
   
 
 
