@@ -49,6 +49,32 @@ width: 600px;
 height: 400px;
 }
 
+/* Media query for screens larger than a specified width (e.g., 768px) */
+@media (min-width: 768px) {
+    /* Ensure that each column maintains a minimum width */
+    .container.text-center .col {
+      min-width: 200px; /* Adjust the minimum width as needed */
+    }
+  
+    /* Change to a 2-column layout on larger screens */
+    .container.text-center .row {
+      grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns on larger screens */
+    }
+  }
+  
+  /* Media query for screens larger than a specified width (e.g., 992px) */
+  @media (min-width: 992px) {
+    /* Further adjust the minimum width for each column */
+    .container.text-center .col {
+      min-width: 300px; /* Adjust the minimum width as needed */
+    }
+  
+    /* Change to a 4-column layout on even larger screens */
+    .container.text-center .row {
+      grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns on even larger screens */
+    }
+  }
+
 
 footer {
     background-color: #1B1212;
