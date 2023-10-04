@@ -49,11 +49,70 @@ width: 600px;
 height: 400px;
 }
 
-
-
-footer {
-    background-color: #1B1212;
+/* Style for the footer */
+.footer {
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
-}
+  }
+  
+  /* Style for the footer container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for quick links and social media sections */
+  .quick-links,
+  .social-media {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  /* Style for the quick links list */
+  .quick-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .quick-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style for social media icons */
+  .social-media ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Style for Font Awesome icons */
+  .fa-facebook:before {
+    content: "\f09a"; /* Facebook icon code */
+  }
+  
+  .fa-twitter:before {
+    content: "\f099"; /* Twitter icon code */
+  }
+  
+  .fa-instagram:before {
+    content: "\f16d"; /* Instagram icon code */
+  }
