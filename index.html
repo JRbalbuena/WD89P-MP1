@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NestFlex - MP1</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...crossorigin="anonymous"/>
@@ -18,25 +22,30 @@
 <body>
 
     <!-- Header -->
-    <header class="bg-dark text-white d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0">
-            <a href="#" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <img src="logo_nobg.png" alt="Logo"></a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white py-3 mb-4 border-bottom">
+        <div class="container row justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="logo_nobg.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="ml-md-3">
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+            </div>
         </div>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2">Home</a></li>
-            <li><a href="#about" class="nav-link px-2">About</a></li>
-            <li><a href="#" class="nav-link px-2">Rates</a></li>
-            <li><a href="#" class="nav-link px-2">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2">Contact</a></li>
-        </ul>
-
-        <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Login</button>
-            <button type="button" class="btn btn-primary">Register</button>
-        </div>
-    </header>
+    </nav>
+    
 
     <!-- Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -81,55 +90,54 @@
       </button>
   </div>
 
-  <!-- About Section -->
- <div class="container about" id="about">
-    <h1>WHAT IS NESTFLEX?</h1>
+<!-- About Section -->
+<div class="container about" id="about">
+    <h1 class="text-center">WHAT IS NESTFLEX?</h1>
 
-    <div class="container text-center">
-        <div class="row row-cols-2">
-          <div class="col">
-            <img src="Mission.jpg" class="image">
-            <br><br>
-            </div>
-          <div class="col">
-            <H3>OUR MISSION</H3>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="Mission.jpg" class="img-fluid" alt="Mission">
+        </div>
+        <div class="col-lg-6">
+            <h3>OUR MISSION</h3>
             <p>At NestFlex, our mission is to revolutionize the way entrepreneurs, students, and freelancers work. We strive to provide accessible, affordable, and flexible co-working spaces that empower individuals to work where they want, when they want. We are committed to fostering a dynamic and collaborative community, fueling innovation, and supporting the growth of businesses and careers.</p>
-            </div>
+        </div>
+    </div>
 
-          <div class="col">
-            <H3>OUR VISION</H3>
-            <p>Nestflex vision is to be the premier destination for those seeking temporary workspace solutions. We aim to create a global network of welcoming and productive co-working environments that offer reliable internet, comfortable amenities, and a vibrant atmosphere. We envision a future where individuals have the freedom to choose their workspace, unlocking their full potential and shaping the way they work. "Work where you want, when you want" is not just our tagline; it's our guiding principle, enabling flexible and successful work experiences for all.</p>
-          </div>
-
-          <div class="col">
-            <img src="vision.jpg" class="image">
-          </div>
+    <div class="row mt-4">
+        <div class="col-lg-6">
+            <h3>OUR VISION</h3>
+            <p>NestFlex's vision is to be the premier destination for those seeking temporary workspace solutions. We aim to create a global network of welcoming and productive co-working environments that offer reliable internet, comfortable amenities, and a vibrant atmosphere. We envision a future where individuals have the freedom to choose their workspace, unlocking their full potential and shaping the way they work. "Work where you want, when you want" is not just our tagline; it's our guiding principle, enabling flexible and successful work experiences for all.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="vision.jpg" class="img-fluid" alt="Vision">
         </div>
     </div>
 </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-top">
-        <div class="container py-4">
-            <div class="row">
+
+<!-- Footer -->
+    <footer class="bg-dark text-white py-3 mb-4 border-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
                 <!-- Brand/Logo -->
-                <div class="col-md-3 mb-2 mb-md-0">
+                <div class="col-md-3">
                     <img src="logo_nobg.png" alt="NestFlex Logo" class="img-fluid">
                 </div>
     
                 <!-- Quick Links -->
-                <div class="col-md-3 mb-2 mb-md-0">
+                <div class="col-md-2">
                     <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled horizontal-list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Rates</a></li>
                         <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
-    
+                
                 <!-- Social Media Icons -->
-                <div class="col-md-2 mb-2 mb-md-0">
+                <div class="col-md-2">
                     <h5>Follow Us</h5>
                     <div class="social-icons">
                         <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
@@ -141,8 +149,10 @@
         </div>
     
         <div class="text-center p-3 bg-dark">
-            &copy; 2023 <a href="#" class="text-white">NestFlex</a>. All Rights Reserved.
+            &copy; 2023 <a href="#" class="text-blue">NestFlex</a>. All Rights Reserved.
         </div>
+    </footer>
+    
     </footer>
     
     

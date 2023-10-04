@@ -12,7 +12,12 @@ body {
 img {
     height: 90px;
     width: 330px;
-}   
+}
+
+.navbar-nav .nav-link {
+    color: blue;
+}
+
 
 /* style for carousel */
 .carousel-item {
@@ -49,3 +54,18 @@ width: 600px;
 height: 400px;
 }
 
+
+
+/* Style for Footer */
+.horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 2px; /* Add spacing between list items */
+}
+
+  
