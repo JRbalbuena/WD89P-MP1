@@ -1,6 +1,6 @@
 * {
-    padding: auto;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,10 +8,10 @@ body {
     background-color: #1B1212;
 }
 
-/* style for header */
+/* Style for header */
 img {
-    height: 90px;
-    width: 330px;
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar-nav .nav-link {
@@ -22,20 +22,20 @@ img {
     color: red;
 }
 
-/* style for carousel */
+/* Style for carousel */
 .carousel-item {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .carousel-item img {
-    max-width: 1500px;
-    max-height: 950px; 
+    max-width: 100%;
+    max-height: 80vh;
     width: auto;
     height: auto;
-    object-fit: scaledown;
-    display: block;
+    object-fit: contain;
     margin: 0 auto;
 }
 
@@ -59,30 +59,28 @@ img {
     opacity: 1;
 }
 
-
-/* style for About Section */
+/* Style for About Section */
 .about {
     margin-top: 50px;
     margin-bottom: 50px;
-
 }
 
 .container.about {
     text-align: center;
     color: aliceblue;
 }
-  
-/*  Style for H1 */
+
+/* Style for H1 */
 .container.about h1 {
     margin: 20px;
     padding-bottom: 5%;
 }
 
-.image{
-width: 600px;
-height: 400px;
+/* Style for Images in About Section */
+.image {
+    max-width: 100%;
+    height: auto;
 }
-
 
 /* Style for Footer */
 .horizontal-list {
@@ -105,4 +103,3 @@ height: 400px;
 .horizontal-list li a:hover {
     color: red;
 }
-  
