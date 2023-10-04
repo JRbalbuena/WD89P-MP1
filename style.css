@@ -67,7 +67,8 @@ height: 400px;
   
   /* Style for the brand/logo */
   .brand-logo img {
-    max-width: 150px; /* Adjust the max-width as needed */
+    height: 90px;
+    width: 330px;
   }
   
   /* Style for quick links and social media sections */
