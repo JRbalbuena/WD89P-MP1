@@ -18,6 +18,11 @@ body {
     font-size: 2rem;
 }
 
+.carousel-image {
+    max-width: 50%;
+    height: auto;
+}
+
 /* About Section */
 .about {
     padding: 60px 0;
@@ -76,3 +81,4 @@ body {
     display: inline;
     margin-right: 15px;
 }
+
