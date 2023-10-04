@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    background-color: #343a40;
+}
+.navbar-brand img {
+    height: 90px;
+    width: 330px;
+}
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+.btn-outline-primary, .btn-primary {
+    font-weight: bold;
+}
+.bg-dark.text-white {
+    color: #ffffff;
+}
+.horizontal-list li {
+    display: inline;
+    margin-right: 10px;
+}
+.social-icons a {
+    color: #ffffff;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.bg-dark.text-white a {
+    color: #007bff;
+}
+.bg-dark.text-white a:hover {
+    text-decoration: underline;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-header {
+    background-color: #ffffff;
+    border: none;
+}
+.card-body {
+    background-color: #f8f9fa;
+}
