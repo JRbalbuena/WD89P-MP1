@@ -51,67 +51,63 @@ height: 400px;
 
 /* Style for the footer */
 .footer {
+    text-align: center; /* Center the text content */
     background-color: #333;
     color: #fff;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 0;
   }
   
-  /* Style for the footer container */
+  /* Center the child elements within the footer */
   .footer-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     flex-wrap: wrap;
   }
-
+  
   /* Style for the brand/logo */
-.brand-logo img {
-    width: 330px;
-    height: 90px;
+  .brand-logo img {
+    max-width: 150px; /* Adjust the max-width as needed */
   }
   
   /* Style for quick links and social media sections */
   .quick-links,
   .social-media {
-    flex: 1;
     margin: 10px;
+    text-align: center; /* Center the content within each section */
   }
   
-  /* Style for the quick links list */
-  .quick-links ul {
-    list-style-type: none;
-    padding: 0;
+  /* Style for headings in each section */
+  .quick-links h4,
+  .social-media h4 {
+    margin-top: 0;
+    font-size: 18px;
   }
   
-  .quick-links ul li {
-    
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .quick-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Style for social media icons */
+  /* Style for lists in each section */
+  .quick-links ul,
   .social-media ul {
     list-style-type: none;
     padding: 0;
   }
   
+  .quick-links ul li,
   .social-media ul li {
     display: inline;
     margin-right: 10px;
   }
   
+  .quick-links a,
   .social-media a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
   }
   
+  /* Style for social media icons */
+  .social-media i {
+    font-size: 24px;
+    margin: 5px; /* Adjust the spacing around icons as needed */
+  }
   /* Style for Font Awesome icons */
   .fa-facebook:before {
     content: "\f09a"; /* Facebook icon code */
